@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text">#FF000000</color>
+    <color name="backText">#838282</color>
+    <color name="back">#FFFFFFFF</color>
+    <color name="main">#0263B9</color>
+    <color name="mainTo">#57B1F9</color>
+    <color name="btn">#FF000000</color>
+</resources>
