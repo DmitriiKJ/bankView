@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -98,104 +95,71 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="data            cvv/cvc"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="30dp"
-                            android:textSize="18dp"
-                            android:textColor="@color/back"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="18dp"
-                            android:text="01/28  ***"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/cardnums"
-                            android:textColor="@color/back"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="data            cvv/cvc"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/back"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="01/28  ***"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/cardnums"
+                        android:textColor="@color/back"/>
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
+        <TextView
             android:layout_margin="10dp"
+            android:textColor="@color/text"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="20dp"
-            android:outlineSpotShadowColor="@color/main"
-            android:onClick="pay">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:layout_marginLeft="10dp"
-                    android:textAlignment="center"
-                    android:textSize="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Виконувати платіж регулярно"
-                    android:textColor="@color/backText"/>
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-                <Switch
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:text="@string/licence"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть суму депозиту:"
+            android:textSize="26sp"
             android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="20dp"
-            android:outlineSpotShadowColor="@color/main"
-            android:onClick="pay">
-        <ImageView
-            android:src="@drawable/gradient"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"/>
-            <TextView
-                android:textAlignment="center"
-                android:textSize="22dp"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Сплатити 2000 грн"
-                android:textColor="@color/back"/>
-        </androidx.cardview.widget.CardView>
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:gravity="center"
+            android:textColor="@color/text"/>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <EditText
+                android:gravity="center"
+                android:text="0"
+                android:id="@+id/reqLoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:minWidth="100dp"
+                android:textColor="@color/text"
+                android:textSize="26sp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Powered by Fondy"
-                android:layout_margin="20dp"
+                android:textSize="26sp"
+                android:text="грн"
                 android:textColor="@color/backText"/>
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/sca"/>
-
         </LinearLayout>
+        <Button
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="Запит"
+            android:textSize="24sp"
+            android:backgroundTint="@color/mainTo"
+            android:textColor="@color/back"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

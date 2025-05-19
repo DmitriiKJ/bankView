@@ -22,6 +22,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Payment"/>
+        <activity android:name=".MenuActivity"/>
+        <activity android:name=".LoanActivity"/>
+        <activity android:name=".DepositActivity"/>
+        <activity android:name=".SaveActivity"/>
     </application>
 
 </manifest>

@@ -6,4 +6,5 @@
     <color name="main">#029F2A</color>
     <color name="mainTo">#59F581</color>
     <color name="btn">#FFFFFFFF</color>
+    <color name="backMain">#3D3D3D</color>
 </resources>

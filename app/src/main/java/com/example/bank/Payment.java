@@ -24,13 +24,4 @@ public class Payment extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.pay);
     }
-
-    public void changeTheme(View v) {
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putBoolean(KEY_THEME, !isDark);
-        editor.apply();
-        Intent intent = getIntent();
-        finish();
-        startActivity(intent);
-    }
 }

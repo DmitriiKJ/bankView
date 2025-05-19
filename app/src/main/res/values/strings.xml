@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">bank</string>
+    <string name="licence"><u>Читайте умови тут</u></string>
 </resources>
